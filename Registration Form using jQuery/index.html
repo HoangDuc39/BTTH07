@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form name="registration" class="registartion-form" onsubmit="return formValidation()" >
+          <table>
+            <tr>
+              <td><label for="userid">User id:</label></td>
+              <td><input type="text" name="userid" id="userid" placeholder="">
+                <span id="useridError"></span>
+            </td>
+           
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" id="password">
+                    <span id="passwordError"></span>
+                </td>
+              </tr>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" name="name" id="name" placeholder="">
+                <span id="nameError"></span>
+            </td>
+            </tr>
+            
+            <tr>
+              <td><label for="address">Address:</label></td>
+              <td><input type="text" name="address" id="address">
+                <span id="addressError"></span>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                  <select name="country" id="country">
+                    <option value="">Select country</option>
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Russian">Russian</option>
+                  </select>
+                </td>
+              </tr>
+         
+            <tr>
+              <td><label for="zipcode">Zip Code:</label></td>
+              <td><input type="text" name="zipcode" id="zipcode">
+                <span id="zipcodeError"></span>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email">
+                    <span id="emailError"></span>
+                </td>
+              </tr>
+            <tr>
+                <td><label for="gender">Sex:</label></td>
+                <td>Male: <input type="radio" name="gender" id="gender" value="male">
+                  Female: <input type="radio" name="gender" id="gender" value="female">
+                 </td>
+              </tr>
+              <tr>
+                <td><label for="language">Language:</label></td>
+                <td>English: <input type="radio" name="language" id="language" value="English">
+                  Non English: <input type="radio" name="language" id="language" value="Non English">
+                 </td>
+              </tr>
+            <tr>
+              <td><label for="about">About:</label></td>
+              <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <script src="js/jQuery.js"></script>
+</body>
+</html>
